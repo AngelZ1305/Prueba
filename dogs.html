@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    img {
-        margin: 20px;
-    }
 
-    .container {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .container-dogs {
         text-align: center;
         font-family: Arial, sans-serif;
         font-weight: bold;
@@ -13,41 +16,100 @@
         justify-content: center;
         background-color: lightgray;
         border-radius: 8px;
+        gap: 5px;
+        margin-bottom: 1rem;
+        margin: 2.5rem;
+        padding: 1rem;
     }
+
     @media screen and (max-width: 768px) {
-        .container {
+        .container-dogs {
             flex-direction: column;
             align-items: center;
         }
-        
+
     }
 </style>
+<header>
+    <h2 onclick="location.href='index.html'" id="app-title">Paw & Tails</h2>
+    <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu">☰</label>
+        <ul class="horizontal-list">
+            <li><a href="/peta">Peta</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/help">How you can help</a></li>
+            <li><a href="/team">Team</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li>
+                <div class="socialContainer">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" style="width:50px;height:50px;">
+                </a>
+            </li>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.png" style="width:50px;height:50px;">
+                </a>
+            </li>
 
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="images/youtube.png" style="width:50px;height:50px;">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" style="width:50px;height:50px;">
+                </a>
+            </li>
+            </div>
+
+
+        </ul>
+    </nav>
+</header>
 
 <body>
-    <div class="container">
+    <div class="container-principal">
+        <div class="container-1">
+            <img src="images/patas.png" alt="">
+
+            <h2>Every Animal Deserves a Loving Home</h2>
+            <h5>Adoption is a lifelong of love and care - open your heart and give a homeless pet a forever home.</h5>
+        </div>
+        <div class="container-2">
+            <nav>
+                <a href="dogs.html" style="color: #007BFF;">Dogs</a>
+                <a href="cats.html">Cats</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-dogs">
+        <h1>Adopt me!</h1>
+    </div>
+
+    <div class="container-dogs">
         <div>
-            <img src="imagesDog/dog1.png" alt="" width="135">
+            <img src="imagesDog/dog1.png" alt="" height="150">
             <h6>Name: Rocky</h6>
             <h6>Weight: 10kg</h6>
         </div>
         <div>
-            <img src="imagesDog/dog2.png" alt="" width="200">
+            <img src="imagesDog/dog2.png" alt="" height="150">
             <h6>Name: Rocky2</h6>
             <h6>Weight: 15kg</h6>
         </div>
         <div>
-            <img src="imagesDog/dog3.png" alt="" width="200">
+            <img src="imagesDog/dog3.png" alt="" height="150">
             <h6>Name: Rocky3</h6>
             <h6>Weight: 20kg</h6>
         </div>
     </div>
+
 </body>
 
 </html>

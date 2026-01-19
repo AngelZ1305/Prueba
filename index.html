@@ -7,62 +7,65 @@
     <title>Veterinaria</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h2 onclick="location.href='index.html'" id="app-title">Paw & Tails</h2>
-    <nav>
-        <input type="checkbox" id="menu">
-        <label for="menu">☰</label>
-        <ul class="horizontal-list">
-            <li><a href="/peta">Peta</a></li>
-            <li><a href="/about">About us</a></li>
-            <li><a href="/help">How you can help</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="images/facebook.png" style="width:50px;height:50px;">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="images/instagram.png" style="width:50px;height:50px;">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.youtube.com" target="_blank">
-                    <img src="images/youtube.png" style="width:50px;height:50px;">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="images/twitter.png" style="width:50px;height:50px;">
-                </a>
-            </li>
-
-
-        </ul>
-    </nav>
-</header>
 
 <body>
-    <div class="container-principal">
-        <div class="container-1">
-            <img src="images/patas.png" alt="">
+    <header>
+        <h1 id="app-title"><a href="index.html">Paw & Tails</a></h1>
+        <nav aria-label="Main navigation panel">
+            <input type="checkbox" id="menu">
+            <label for="menu" aria-label="Open Menu">☰</label>
+            <ul class="horizontal-list">
+                <li><a href="peta.html">Peta</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="help.html">How you can help</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.png" class="social-media-icons" alt="Facebook">
 
-            <h2>Every Animal Deserves a Loving Home</h2>
-            <h5>Adoption is a lifelong of love and care - open your heart and give a homeless pet a forever home.</h5>
-        </div>
-        <div class="container-2">
-            <nav>
-                <a href="dogs.html">Dogs</a>
-                <a href="cats.html">Cats</a>
-            </nav>
-        </div>
-    </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/instagram.png" class="social-media-icons" alt="Instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/youtube.png" class="social-media-icons" alt="YouTube">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.png" class="social-media-icons" alt="Twitter">
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-principal">
+            <section class="container-1">
+                <img src="images/patas.png" alt="">
+
+                <h2>Every Animal Deserves a Loving Home</h2>
+                <p>Adoption is a lifelong of love and care - open your heart and give a homeless pet a forever home.</p>
+            </section>
+            <div class="container-2">
+                <nav aria-label="Pet Adoption Categories">
+                    <a href="dogs.html">Dogs</a>
+                    <a href="cats.html">Cats</a>
+                </nav>
+            </div>
+        </section>
+    </main>
 
 
 </body>

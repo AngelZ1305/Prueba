@@ -19,6 +19,20 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
 }
+button {
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    color: #007BFF;
+}
 
 header {
     height: 120px;
@@ -62,6 +76,27 @@ li {
 p {
     font-weight: bold;
     font-size: small;
+}
+
+.adoption-btn {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: black;
+    font-size: 18px;
+}
+.adoption-btn:hover {
+    background-color: #003b79;
+    color: white;
+}
+.adoption-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.adoption-container img {
+    border-radius: 8px;
+    height: 200px;
 }
 
 
@@ -130,7 +165,9 @@ p {
     font-weight: bold;
 
 }
-
+#pets-container {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     header {

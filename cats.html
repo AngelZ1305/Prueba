@@ -7,88 +7,32 @@
     <title>Veterinaria</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1 id="app-title"><a href="index.html">Paw & Tails</a></h1>
-        <nav aria-label="Main navigation panel">
-            <input type="checkbox" id="menu">
-            <label for="menu" aria-label="Open Menu">☰</label>
-            <ul class="horizontal-list">
-                <li><a href="peta.html">Peta</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="help.html">How you can help</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <img src="images/facebook.png" class="social-media-icons" alt="Facebook">
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <img src="images/instagram.png" class="social-media-icons" alt="Instagram">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                        <img src="images/youtube.png" class="social-media-icons" alt="YouTube">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                        <img src="images/twitter.png" class="social-media-icons" alt="Twitter">
-                    </a>
-                </li>
-
-
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section class="container-principal">
-            <div class="container-1">
-                <img src="images/patas.png" alt="">
-
-                <h2>Every Animal Deserves a Loving Home</h2>
-                <p>Adoption is a lifelong of love and care - open your heart and give a homeless pet a forever home.</p>
-            </div>
-            <div class="container-2">
-                <nav aria-label="Pet Adoption Categories">
-                    <a href="dogs.html">Dogs</a>
-                    <a href="cats.html">Cats</a>
-                </nav>
-            </div>
-        </section>
 
         <div class="header-cats">
             <h2>Adopt me!</h2>
         </div>
-
         <section class="container-cats">
-            <article>
+            <article data-type="cat" data-id="1">
                 <img src="imagesCat/cat1.png" alt="Cat named Yuki">
                 <h3>Name: Yuki</h3>
                 <p>Weight: 10kg</p>
+                <button class="adoption-btn">Adopt me</button>
             </article>
-            <article>
+            <article data-type="cat" data-id="2">
                 <img src="imagesCat/cat2.png" alt="Cat named Yuki2">
                 <h3>Name: Yuki2</h3>
                 <p>Weight: 15kg</p>
+                <button class="adoption-btn">Adopt me</button>
             </article>
-            <article>
-                <img src="imagesCat/cat3.png" alt="Cat named Yuki3">
+            <article data-type="cat" data-id="3">
+                <img src="imagesCat/cat3.png" alt="Cat named Shadow">
                 <h3>Name: Yuki3</h3>
-                <p>Weight: 20kg</p>
+                <p>Weight: 7kg</p>
+                <button class="adoption-btn">Adopt me</button>
             </article>
         </section>
     </main>
-
 </body>
-
 </html>

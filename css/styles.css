@@ -78,16 +78,22 @@ p {
     font-size: small;
 }
 
-.adoption-btn {
+.adoption-btn, #confirm-adoption-btn {
     margin-top: 10px;
     background-color: #007BFF;
     color: black;
     font-size: 18px;
 }
-.adoption-btn:hover {
+.adoption-btn.adopted {
+    background-color: #003b79;
+    color: white;
+    cursor: not-allowed;
+}
+.adoption-btn:hover, #confirm-adoption-btn:hover {
     background-color: #003b79;
     color: white;
 }
+
 .adoption-container {
     margin: 2rem;
     display: flex;
@@ -157,6 +163,10 @@ p {
 .container-2 {
     margin-top: 1rem;
 }
+.container-2 button {
+    border: 2px solid black;
+    border-radius: 8px;
+}
 
 .container-2 a:hover {
     color: #007BFF;
@@ -208,9 +218,7 @@ p {
     font-weight: bold;
 
 }
-#pets-container {
-    display: none;
-}
+
 #cart-icon {
     height: 50px;
     width: 50px;
@@ -218,7 +226,14 @@ p {
 }
 #cart-icon:hover {
     transform: scale(1.1);
-}   
+}
+
+
+
+#pets-container {
+    display: none;
+}
+ 
 
 @media screen and (max-width: 768px) {
     header {
@@ -234,7 +249,10 @@ p {
     input:checked~label {
         background: #007BFF;
         color: white;
+        text-align: center;
+        margin-left: 6rem;
     }
+    
 
     label {
         box-sizing: border-box;
@@ -258,6 +276,7 @@ p {
 
     ul {
         display: none;
+
     }
 
     .container-dogs {

@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+a:hover {
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+button {
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    color: #007BFF;
+}
+
+header {
+    height: 120px;
+    background-color: #007BFF;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+    font-size: small;
+
+}
+
+h1 {
+    margin: 5px 0;
+    border-radius: 8px;
+
+}
+
+h3 {
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+label, input {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-top: 2.5rem;
+}
+
+
+p {
+    font-weight: bold;
+    font-size: small;
+}
+
+.adoption-btn {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: black;
+    font-size: 18px;
+}
+.adoption-btn:hover {
+    background-color: #003b79;
+    color: white;
+}
+.adoption-container {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding-bottom: 3rem;
+}
+.adoption-container h2 {
+    margin: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.3rem;
+}
+.adoption-container img {
+    border-radius: 8px;
+    height: 200px;
+}
+
+
+.container-principal {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.container-cart h2 {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem;
+}
+.container-cart button {
+    background-color: #007BFF;
+    border-radius: 8px;
+}
+.container-cart button:hover {
+    color: white;
+    background-color: #003b79;
+}
+.container-shop {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.container-shop article, .container-cart article {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+.container-shop img, .container-cart img {
+    border-radius: 8px;
+    height: 150px;
+}
+
+.container-1 {
+    color: #f5f5f5;
+    background-color: #007BFF;
+    padding: 4rem;
+    border-radius: 8px;
+    margin-inline: 2rem;
+}
+
+.container-2 {
+    margin-top: 1rem;
+}
+
+.container-2 a:hover {
+    color: #007BFF;
+}
+
+.container-dogs,
+.header-dogs,
+.container-cats,
+.header-cats {
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 8px;
+    gap: 5px;
+    margin: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
+
+.container-dogs img,
+.container-cats img {
+    border-radius: 8px;
+    height: 120px;
+}
+
+.social-media-icons {
+    height: 50px;
+    width: 50px;
+}
+.social-media-icons:hover {
+    transform: scale(1.1);
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.horizontal-list li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+
+}
+#pets-container {
+    display: none;
+}
+#cart-icon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#cart-icon:hover {
+    transform: scale(1.1);
+}   
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    input:checked~ul {
+        display: flex;
+    }
+
+    input:checked~label {
+        background: #007BFF;
+        color: white;
+    }
+
+    label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    li {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .container-dogs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horizontal-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horizontal-list li {
+        margin-bottom: 10px;
+    }
+}

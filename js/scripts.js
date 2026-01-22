@@ -110,7 +110,9 @@ if (confirmBtn) {
         saveAdoptedPet(type, id);
         confirmBtn.disabled = true;
         confirmBtn.textContent = "Adopted";
+        
     });
+
 }
 
 function adoptedState(container) {
@@ -124,6 +126,7 @@ function adoptedState(container) {
 
         btn.disabled = isPetAdopted(type, id);
         btn.textContent = btn.disabled ? "Adopted" : "Adopt me";
+        btn.classList.toggle("adopted", btn.disabled);
 
     });
 }

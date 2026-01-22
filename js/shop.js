@@ -26,6 +26,7 @@ addToCartButtons.forEach(button => {
     });
 
     function displayCartItems() {
+        if (!cartItemsContainer) return;
         cartItemsContainer.innerHTML = '';
         let totalPrice = 0;
 
